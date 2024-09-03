@@ -42,25 +42,6 @@ Copiá el número abajo y te mandamos a WhatsApp directo:
         }
     }
 
-    async function setReaderUrl(url, href, copy) {
-        document.getElementById("reader").innerHTML = href;
-        document.getElementById("reader").style.display = "block";
-        if (copy) {
-            if (navigator.clipboard) {
-                try {
-                    await navigator.clipboard.writeText(href);
-                    setStatus("✅ Immersive Reader URL copied to clipboard!");
-                    // push the URL to the browser history so that the user can share the URL
-                    history.pushState({}, null, "?url=" + url);
-                } catch (e) {
-                    setStatus("❌ Error copying to clipboard");
-                }
-            } else {
-                setStatus("❔ Clipboard unavailable. Please copy the URL manually.");
-            }
-        }
-    }
-
     function go() {
         setTimeout(async () => {
             var phone = document.getElementById("phone").value;
@@ -74,7 +55,7 @@ Copiá el número abajo y te mandamos a WhatsApp directo:
             if (phone.startsWith("15")) {
                 phone = phone.substring(2);
             }
-            if (phone.length == 6) {
+            if (phone.length == 8) {
                 phone = "11" + phone;
             }
             phone = "+54" + phone;
