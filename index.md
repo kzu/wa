@@ -9,7 +9,7 @@ Copiá el número abajo y te mandamos a WhatsApp directo:
 <table>
     <tr style="border: none !important; ">
         <td style="width: 100%;">
-            <input id="phone" onpaste="go()" oninput="go()" style="width: 100%;">
+            <input id="phone" style="width: 100%;">
         </td>
         <td style="width: 1%">
             <button onclick="go()" class="btn btn-green">Chatear</button>
