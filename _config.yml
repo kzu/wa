@@ -4,7 +4,7 @@ plugins:
 remote_theme: kzu/beautiful-jekyll@main
 author: Daniel Cazzulino
 title : Daniel Cazzulino
-description : A simple way to bypass (most?) paywalls
+description : A quick and simple way to start a WhatsApp conversation without saving a contact
 title-img: https://www.devlooped.com/img/icon.svg
 navbar-img: https://api.kzu.app/background.svg
 avatar: https://api.kzu.app/badge.png
